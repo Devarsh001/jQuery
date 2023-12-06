@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../02_cdn.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Math Operation</h1>
+        <p>Enter No.1 : <input type="text" name="" id="inp1"> </p>
+        <p>Enter No.2 : <input type="text" name="" id="inp2"> </p>
+        <button id="add">+</button>
+        <button id="sub">-</button>
+        <button id="mul">*</button>
+        <button id="div">/</button>
+        <button id="mod">%</button>
+        <p>Answer is <i id="ans"></i></p>
+    </div>
+
+    <script>
+
+        var i1 = $('#inp1').val();
+        var i2 = $('#inp2').val();
+        var ans = i1 + i2;
+
+        $('#add').click(function(){
+            $('#ans').val(ans)
+        })
+    </script>
+</body>
+</html>
